@@ -1,0 +1,151 @@
+/**
+* Filename    : style.css
+* Date        : 2018-08-15
+* Description : Style file
+**/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+input, a, a:hover, button, button:hover {
+	transition: all 0.4s;
+}
+.clear {
+	clear: both;
+}
+.align-right {
+	text-align: right;
+}
+.align-center {
+	text-align: center;
+}
+.align-left {
+	text-align: left;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+
+/* Common Style */
+button {
+	border: none;
+	background: #07387a;
+	padding: 10px 12px;
+	color: white;
+	border-radius: 8px;
+	font-size: 16px;
+	opacity: 1;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+/* Header Style */
+.header {
+	height: 88px;
+}
+.header .container {
+	background:linear-gradient(white, #EEEEEE);
+}
+.header .logo {
+	float: left;
+}
+.header .logo a img {
+	border: none;
+}
+.header .logo a:hover, .header .logo a:link, .header .logo a:focus, .header .logo a:active {
+	text-decoration: none;
+}
+.header .nav {
+	float: left;
+	margin-top: 30px;
+}
+.header .nav ul, .header .nav li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.header .nav li {
+	float: left;
+	margin-left: 20px;
+}
+.header .nav li a {
+	color: #222;
+	font-size: 25px;
+}
+.header .nav li a:hover {
+	text-decoration: none;
+}
+.header .top-right {
+	float: right;
+}
+.header .top-right button {
+	margin-top: 30px;
+}
+
+/* Content */
+.content .container {
+	padding: 0;
+}
+.content .banner {
+	position: relative;
+	width: 100%;
+}
+.content .banner .caption {
+	position: absolute;
+	width: 530px;
+	left: 30px;
+	text-align: center;
+	top: 30%;
+	font-family: "Gadugi";
+}
+.content .banner .caption h2 {
+	color: white;
+	font-weight: normal;
+	font-size: 50px;
+}
+.content .banner .caption p {
+	color: white;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+.content .banner .sub-banner {
+	padding-top: 10px;
+}
+.content .sub-banner .col-sm-2 {
+	padding: 0;
+	margin-left: 2px;
+	background: #07387a;
+	padding: 20px 10px 10px 7px;
+	text-align: center;
+}
+.content .sub-banner .col-sm-2:first-child {
+	margin-left: 0;
+}
+.sub-banner .col-sm-2 h6 {
+	color: white;
+	font-size: 22px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.sub-banner .col-sm-2 p {
+	color: white;
+	font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
