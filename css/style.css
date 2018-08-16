@@ -46,14 +46,16 @@ button {
 	font-size: 16px;
 	opacity: 1;
 }
-
 button:hover {
 	opacity: 0.9;
+}
+i.fas {
+	font-family: "Fontawesome";
 }
 
 /* Header Style */
 .header {
-	height: 88px;
+	height: 85px;
 }
 .header .container {
 	background:linear-gradient(white, #EEEEEE);
@@ -120,18 +122,51 @@ button:hover {
 	font-size: 22px;
 	letter-spacing: 1px;
 }
-.content .banner .sub-banner {
+.content .sub-banner {
 	padding-top: 10px;
+	background: url("../images/subbg.jpg") no-repeat left top;
+	background-size: cover;
+	position: relative;
 }
 .content .sub-banner .col-sm-2 {
 	padding: 0;
-	margin-left: 2px;
-	background: #07387a;
-	padding: 20px 10px 10px 7px;
+	padding-left: 2px;
+}
+.content .sub-banner .col-sm-2 .sub-item {
 	text-align: center;
+	background: #000147;
+	padding: 20px 12px 10px 10px;
+	opacity: 0.9;
+	position: relative;
+}
+.content .sub-banner .go-bottom {
+	position: absolute;
+	width: 36px;
+	height: 28px;
+	background: #f2d59c;
+	border-radius: 4px 4px 0 0;
+	text-align: center;
+	bottom: 0;
+	left: calc(50% - 18px);
+}
+.content .sub-banner .go-bottom i {
+	color: #222;
+}
+.content .sub-banner .go-bottom a {
+	opacity: 1;
+	display: block;
+}
+.content .sub-banner .go-bottom a:hover {
+	opacity: 0.8;
+}
+.sub-item i.fas {
+	color: #f2d59c;
+	position: absolute;
+	top: -7px;
+	left: calc(50% - 12px);
 }
 .content .sub-banner .col-sm-2:first-child {
-	margin-left: 0;
+	padding-left: 0;
 }
 .sub-banner .col-sm-2 h6 {
 	color: white;
@@ -142,6 +177,23 @@ button:hover {
 .sub-banner .col-sm-2 p {
 	color: white;
 	font-size: 14px;
+}
+
+/* What We Do section */
+#whatwedo {
+	height: 100vh;
+	text-align: center;
+}
+#whatwedo h1 {
+	font-size: 50px;
+	color: #000;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+#whatwedo p {
+	color: #333;
+	font-size: 25px;
+	padding: 20px;
 }
 
 /* Responsive */
