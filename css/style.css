@@ -52,6 +52,21 @@ button:hover {
 i.fas {
 	font-family: "Fontawesome";
 }
+section {
+	height: 100vh;
+	text-align: center;
+}
+section h1 {
+	font-size: 50px;
+	color: #000;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+section p {
+	color: #333;
+	font-size: 25px;
+	padding: 20px;
+}
 
 /* Header Style */
 .header {
@@ -109,7 +124,10 @@ i.fas {
 	width: 530px;
 	left: 30px;
 	text-align: center;
-	top: 30%;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 	font-family: "Gadugi";
 }
 .content .banner .caption h2 {
@@ -172,6 +190,8 @@ i.fas {
 	color: white;
 	font-size: 22px;
 	font-weight: normal;
+	-webkit-text-transform: uppercase;
+	-ms-text-transform: uppercase;
 	text-transform: uppercase;
 }
 .sub-banner .col-sm-2 p {
@@ -180,20 +200,88 @@ i.fas {
 }
 
 /* What We Do section */
-#whatwedo {
-	height: 100vh;
+#whatwedo .col-sm-6, #whatwedo .col-sm-3 {
+	padding: 0;
+	z-index: 1;
+}
+#whatwedo .col-sm-6, #whatwedo .col-sm-3 {
+	position: relative;
+	z-index: 1;
+}
+#whatwedo .overlay {
+	position: absolute;
+	width: calc(100% - 80px);
+	z-index: 10;
+	left: 40px;
+	top: 50%;
+	transition: .5s ease;
+	padding: 0 20px;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 	text-align: center;
 }
-#whatwedo h1 {
-	font-size: 50px;
-	color: #000;
-	margin-top: 50px;
-	margin-bottom: 30px;
+#whatwedo .col-sm-3 .overlay {
+	width: calc(100% - 40px);
+	left: 20px;
+	padding: 0 10px;
 }
-#whatwedo p {
-	color: #333;
-	font-size: 25px;
-	padding: 20px;
+#whatwedo .overlay h6 {
+	color: #FFF;
+	font-size: 18px;
+	margin: 0 0 20px 0;
+	letter-spacing: -1px;
+	-webkit-text-transform: uppercase;
+	-ms-text-transform: uppercase;
+	text-transform: uppercase;
+	line-height: 25px;
+}
+#whatwedo .overlay p {
+	color: #FFF;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	display: none;
+}
+#whatwedo .overlay .read-more {
+	color: #FFF;
+	font-size: 14px;
+	text-align: left;
+	font-weight: bold;
+	line-height: 30px;
+	-webkit-text-transform: uppercase;
+	-ms-text-transform: uppercase;
+	text-transform: uppercase;
+	display: none;
+}
+#whatwedo .overlay-bg {
+	opacity: 0;
+	transition: .5s ease;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	background: #2a6764;
+}
+
+#whatwedo .col-sm-6:hover .overlay, #whatwedo .col-sm-3:hover .overlay {
+	transition: .5s ease;
+	border-left: 2px solid #FFF;
+}
+#whatwedo .col-sm-6:hover .overlay-bg, #whatwedo .col-sm-3:hover .overlay-bg {
+	opacity: 0.5;
+	cursor: pointer;
+}
+#whatwedo .col-sm-6:hover .overlay p, #whatwedo .col-sm-3:hover .overlay p, 
+#whatwedo .col-sm-6:hover .overlay .read-more, #whatwedo .col-sm-3:hover .overlay .read-more {
+	display: block;
+}
+#whatwedo .col-sm-6:hover .overlay h6, #whatwedo .col-sm-3:hover .overlay h6 {
+	text-align: left;
 }
 
 /* Responsive */
