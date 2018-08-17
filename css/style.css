@@ -190,8 +190,6 @@ section p {
 	color: white;
 	font-size: 22px;
 	font-weight: normal;
-	-webkit-text-transform: uppercase;
-	-ms-text-transform: uppercase;
 	text-transform: uppercase;
 }
 .sub-banner .col-sm-2 p {
@@ -211,7 +209,7 @@ section p {
 #whatwedo .overlay {
 	position: absolute;
 	width: calc(100% - 80px);
-	z-index: 10;
+	z-index: 30;
 	left: 40px;
 	top: 50%;
 	transition: .5s ease;
@@ -231,8 +229,6 @@ section p {
 	font-size: 18px;
 	margin: 0 0 20px 0;
 	letter-spacing: -1px;
-	-webkit-text-transform: uppercase;
-	-ms-text-transform: uppercase;
 	text-transform: uppercase;
 	line-height: 25px;
 }
@@ -251,10 +247,9 @@ section p {
 	text-align: left;
 	font-weight: bold;
 	line-height: 30px;
-	-webkit-text-transform: uppercase;
-	-ms-text-transform: uppercase;
 	text-transform: uppercase;
 	display: none;
+	position: relative;
 }
 #whatwedo .overlay-bg {
 	opacity: 0;
@@ -270,7 +265,7 @@ section p {
 
 #whatwedo .col-sm-6:hover .overlay, #whatwedo .col-sm-3:hover .overlay {
 	transition: .5s ease;
-	border-left: 2px solid #FFF;
+	border-left: 2px solid #AAA;
 }
 #whatwedo .col-sm-6:hover .overlay-bg, #whatwedo .col-sm-3:hover .overlay-bg {
 	opacity: 0.5;
@@ -279,9 +274,14 @@ section p {
 #whatwedo .col-sm-6:hover .overlay p, #whatwedo .col-sm-3:hover .overlay p, 
 #whatwedo .col-sm-6:hover .overlay .read-more, #whatwedo .col-sm-3:hover .overlay .read-more {
 	display: block;
+	color: #AAA;
 }
 #whatwedo .col-sm-6:hover .overlay h6, #whatwedo .col-sm-3:hover .overlay h6 {
 	text-align: left;
+	color: #AAA;
+}
+.second-p {
+	padding-top: 0;
 }
 
 /* Responsive */
