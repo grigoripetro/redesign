@@ -9,6 +9,13 @@ html, body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
+	background: #DDD;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+	background: white;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
 }
 
 a {
@@ -40,7 +47,7 @@ input, a, a:hover, button, button:hover {
 button {
 	border: none;
 	background: #07387a;
-	padding: 10px 12px;
+	padding: 10px 15px;
 	color: white;
 	border-radius: 8px;
 	font-size: 16px;
@@ -230,6 +237,7 @@ section p {
 	letter-spacing: -1px;
 	text-transform: uppercase;
 	line-height: 25px;
+	font-weight: bold;
 }
 #whatwedo .overlay p {
 	color: #FFF;
@@ -306,6 +314,10 @@ section p {
 	color: #333;
 	padding: 10px 0;
 }
+#whychoose .why-item a {
+	color: #4d95bb;
+	font-size: 16px;
+}
 
 /* Recent Criminal Case Results */
 .criminal {
@@ -324,6 +336,8 @@ section p {
 }
 .criminal .crim-wrap .col-sm-3 {
 	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .criminal .crim-wrap h5 {
 	color: white;
@@ -359,7 +373,7 @@ section p {
 }
 .calc .col-md-3 {
 	text-align: center;
-	padding: 0 54px;
+	padding: 0 40px;
 }
 .calc .col-md-3 h3 {
 	color: #4f3a5f;
@@ -379,10 +393,234 @@ section p {
 .calc .col-md-3 p {
 	color: #AAA;
 	font-size: 15px;
+	text-transform: uppercase;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
+/* Review section */
+.review {
+	width: 100%;
+	background: url("../images/reviewbg.jpg") no-repeat left top;
+	background-size: cover;
 }
-@media (max-width: 768px) {
+.review .quote1 {
+	margin-top: 140px;
+	text-align: right;
+	margin-bottom: 30px;
+}
+.review .quote2 {
+	margin-top: 140px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.review .col-md-6 {
+	text-align: center;
+	padding-top: 25px;
+}
+.review .col-md-6 h6 {
+	margin: 25px 0 20px 0;
+	color: white;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+.review .col-md-6 p {
+	color: white;
+	font-size: 17px;
+	padding: 20px 26px;
+	line-height: 25px;
+}
+
+/* Recent News */
+.recent-news {
+	width: 96%;
+	margin: 25px auto;
+	text-align: center;
+}
+.recent-news .col-md-4 p {
+	color: #555;
+	font-size: 18px;
+}
+.recent-news .col-md-4 .recent-item {
+	border-left: 1px solid #E9E9E9;
+	border-right: 1px solid #E9E9E9;
+	padding: 20px;
+}
+.recent-news .read-more {
+	width: 170px;
+	font-size: 15px;
+}
+
+/* Contact Form */
+.contact-form {
+	margin-top: 50px;
+}
+.contact-form h1 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.contact-form .contact-wrap {
+	width: 80%;
+	margin: 0 auto;
+}
+.contact-form .col-sm-3 {
+	padding: 0 5px;
+}
+.contact-form .col-sm-12 {
+	margin-top: 15px;
+	padding: 0 5px;
+}
+.contact-form .col-sm-12 textarea {
+	min-height: 100px;
+}
+.contact-form .form-submit {
+	background: #ebd088;
+	color: #333;
+	font-size: 14px;
+	padding: 9px 20px;
+	font-style: italic;
+}
+
+/* Footer */
+footer * {
+	color: white;
+}
+footer .container {
+	background: #063779;
+	padding: 25px;
+}
+footer h3 a {
+	font-size: 40px;
+	font-weight: bold;
+}
+footer h3 a:hover {
+	text-decoration: none;
+	color: white;
+}
+footer p {
+	line-height: 25px;
+}
+footer p span {
+	font-weight: bold;
+}
+footer .col-md-3 {
+}
+footer .col-md-3 h4, footer .col-md-2 h4 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+footer .col-md-3 ul, footer .col-md-2 ul {
+	margin: 0;
+	padding: 0;
+}
+footer .col-md-3 ul li, footer .col-md-2 ul li {
+	text-align: left;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+footer .col-md-3 ul li a, footer .col-md-2 ul li a {
+	color: white;
+}
+footer .col-md-3 ul li a:hover, footer .col-md-2 ul li a:hover {
+	color: white;
+	text-decoration: none;
+}
+footer .col-md-3 ul li::before, footer .col-md-2 ul li::before 
+{
+	content: "•    ";
+	font-size: 25px;
+	vertical-align: middle;
+	color: #2768a4;
+}
+
+/* Responsive style */
+@media (min-width: 992px) {
+	button {
+		font-size: 14px;
+	}
+	.header .nav {
+		margin-top: 26px;
+	}
+	.header .nav li a {
+	    font-size: 20px;
+	}
+	.header .top-right button {
+	    margin-top: 19px;
+	}
+	.sub-banner .col-sm-2 h6 {
+		font-size: 20px;
+	}
+	.sub-banner .col-sm-2 p {
+	    font-size: 11px;
+	}
+	.content .sub-banner .go-bottom {
+	    width: 32px;
+	    height: 28px;
+	    left: calc(50% - 16px);
+	}
+	section h1 {
+		font-size: 47px;
+	}
+	section p {
+		font-size: 20px;
+	}
+	#whatwedo .overlay h6 {
+		font-size: 14px;
+		margin: 0 0 13px 0;
+	}
+	#whatwedo .overlay p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	#whatwedo .overlay .read-more {
+		font-size: 13px;
+	}
+	#whychoose .why-item h5 {
+		font-size: 20px;
+	}
+	#whychoose .why-item p {
+		font-size: 17px;
+	}
+	#whychoose .why-item a {
+		font-size: 14px;
+	}
+	#whychoose .why-item {
+		min-height: 250px;
+	}
+	.criminal .crim-wrap .col-sm-3 {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	.criminal .crim-wrap .crim-item {
+		font-size: 11px;
+	}
+	.criminal .crim-wrap .crim-item span {
+		font-size: 13px;
+	}
+	.calc .col-md-3 p {
+		font-size: 11px;
+	}
+	.review .col-md-6 h6 {
+		font-size: 14px;
+	}
+	.review .col-md-6 h6 {
+		margin: 20px 0 17px 0;
+	}
+	.review .col-md-6 p {
+		font-size: 16px;
+		padding: 17px 26px;
+	}
+	.recent-news .col-md-4 p {
+		font-size: 14px;
+	}
+	footer .col-md-3 h4, footer .col-md-2 h4 {
+		font-size: 19px;
+	}
+	footer h3 a {
+		font-size: 38px;
+	}
+	footer .col-md-12 p {
+		font-size: 12px;
+	}
+}
+@media (min-width: 768px) {
 }
