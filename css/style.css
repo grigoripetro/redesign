@@ -53,7 +53,6 @@ i.fas {
 	font-family: "Fontawesome";
 }
 section {
-	height: 100vh;
 	text-align: center;
 }
 section h1 {
@@ -280,8 +279,67 @@ section p {
 	text-align: left;
 	color: #AAA;
 }
-.second-p {
+
+/* Why Choose ... section */
+#whychoose .second-p {
 	padding-top: 0;
+}
+#whychoose .col-sm-4 {
+	position: relative;
+}
+#whychoose .why-item {
+	padding: 20px 0 15px 0;
+	margin-top: -12px;
+	text-align: center;
+	border-top: 1px solid #94c4d7;
+	border-bottom: 1px solid #94c4d7;
+	min-height: 240px;
+}
+#whychoose .why-item h5 {
+	color: #4d95bb;
+	font-size: 23px;
+	letter-spacing: -1px;
+	font-family: "Verdana";
+}
+#whychoose .why-item p {
+	font-size: 18px;
+	color: #333;
+	padding: 10px 0;
+}
+
+/* Recent Criminal Case Results */
+.criminal {
+	width: 100%;
+	position: relative;
+	background: url("../images/crimbg.jpg") no-repeat left top;
+	background-size: cover;
+	padding: 30px 0 0 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+.criminal .crim-wrap {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.criminal .crim-wrap .col-sm-3 {
+	margin-top: 10px;
+}
+.criminal .crim-wrap h5 {
+	color: white;
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+.criminal .crim-wrap p {
+	font-size: 13px;
+	color: #DDD;
+	line-height: 22px;
+	text-align: left;
+}
+.criminal .crim-wrap .crim-item {
+	color: white;
+	font-size: 14px;
+	text-align: center;
 }
 
 /* Responsive */
