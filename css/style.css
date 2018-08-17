@@ -318,12 +318,12 @@ section p {
 	text-align: center;
 }
 .criminal .crim-wrap {
-	width: 80%;
+	width: 76%;
 	margin: 0 auto;
 	padding-bottom: 10px;
 }
 .criminal .crim-wrap .col-sm-3 {
-	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .criminal .crim-wrap h5 {
 	color: white;
@@ -331,15 +331,54 @@ section p {
 	margin-bottom: 15px;
 }
 .criminal .crim-wrap p {
-	font-size: 13px;
+	font-size: 12px;
 	color: #DDD;
 	line-height: 22px;
 	text-align: left;
+	margin-bottom: 20px;
 }
 .criminal .crim-wrap .crim-item {
 	color: white;
-	font-size: 14px;
+	font-size: 13px;
 	text-align: center;
+	height: 95px;
+	background: #605868;
+	opacity: 0.7;
+	padding: 10px 15px;
+	vertical-align: middle;
+}
+.criminal .crim-wrap .crim-item span {
+	font-size: 14px;
+	color: #143b6e;
+}
+
+/* Calc several options */
+.calc {
+	width: 90%;
+	margin: 30px auto;
+}
+.calc .col-md-3 {
+	text-align: center;
+	padding: 0 54px;
+}
+.calc .col-md-3 h3 {
+	color: #4f3a5f;
+	font-size: 32px;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.calc .col-md-3 h3:after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  width: 30px;
+  border-bottom: 2px solid #4f3a5f;
+}
+.calc .col-md-3 p {
+	color: #AAA;
+	font-size: 15px;
 }
 
 /* Responsive */
