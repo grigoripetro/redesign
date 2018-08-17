@@ -848,7 +848,7 @@ footer .col-md-3 ul li::before, footer .col-md-2 ul li::before
 }
 @media (max-width: 600px) {
 	.header {
-	    height: 70px;
+	    height: auto;
 	}
 	.header .logo {
 		width: 210px;
@@ -856,12 +856,28 @@ footer .col-md-3 ul li::before, footer .col-md-2 ul li::before
 	.header .logo a img {
 		width: 100%;
 	}
-	header .nav li {
+	.header .container {
+		position: relative;
+	}
+	.header .nav li {
 		display: none;
+		float: none;
+		text-align: right;
+	}
+	.header .nav li.responsive {
+		display: block;
+		transition: all 0.7s;
+	}
+	.header .nav ul {
+		margin-top: 45px;
+    	margin-right: 4px;
 	}
 	header .nav li.icon {
 		display: block;
 		margin-left: 10px;
+		position: absolute;
+		top: 20px;
+		right: 30px;
 	}
 	.header .top-right {
 		display: none;
