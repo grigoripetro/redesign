@@ -4,6 +4,7 @@
 * Description : Style file
 **/
 
+/* Main Styles */
 html, body {
 	margin: 0;
 	padding: 0;
@@ -17,7 +18,6 @@ html, body {
 	border-left: 1px solid #CCC;
 	border-right: 1px solid #CCC;
 }
-
 a {
 	text-decoration: none;
 }
